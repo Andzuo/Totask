@@ -40,8 +40,6 @@ export const Sidebar = ({ strorageKey = "t-sidebar-state" }: SidebarProps) => {
       []
    );
 
-   // {"123": true} => ["123"]
-
    const onExpand = (id: string) => {
       setExpanded((curr) => ({
          ...curr,
