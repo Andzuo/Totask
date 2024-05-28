@@ -25,7 +25,7 @@ const MarketingPage = () => {
                Gerenciamento de tarefas número 1
             </div>
             <h1 className="text-3xl md:text-6xl text-center text-neutral-800 mb-6">
-               Taskify ajuda a movimentar seu time
+               ToTask ajuda a movimentar seu time
             </h1>
             <div className=" text-3xl md:text-6xl bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white px-4 p-2 rounded-md pb-4 w-fit">
                Adiante seu trabalho.
@@ -39,7 +39,7 @@ const MarketingPage = () => {
          >
             Colabore, gerencie projetos e atinja novos picos de produtividade.
             De arranha-céus ao home office, a maneira como sua equipe trabalha é
-            única—realize tudo com o Taskify.
+            única—realize tudo com o ToTask.
          </div>
          <Button className="mt-6" size="lg" asChild>
             <Link href="/sign-up"> Comece seu trabalho gratis</Link>
