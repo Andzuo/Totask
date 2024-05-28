@@ -1,4 +1,4 @@
 export const siteConfig = {
-    name: "Taskify",
-    description: "Taskify ajuda a movimentar seu time",
+    name: "ToTask",
+    description: "ToTask ajuda a movimentar seu time",
 };
