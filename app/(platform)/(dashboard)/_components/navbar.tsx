@@ -1,7 +1,8 @@
 import { Plus } from "lucide-react";
+import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
 
 import { Button } from "@/components/ui/button";
-import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
+import { MobileSidebar } from "./mobile-sidebar";
 
 export const Navbar = () => {
    return (
