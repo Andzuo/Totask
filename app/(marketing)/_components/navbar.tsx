@@ -8,10 +8,10 @@ export const Navbar = () => {
             Tasks
             <div className="space-x-4 md:block md:w-auto flex items-center justify-between w-full">
                <Button size={"sm"} variant={"outline"} asChild>
-                  <Link href={"/sing-in"}>Login</Link>
+                  <Link href={"/sign-in"}>Login</Link>
                </Button>
                <Button>
-                  <Link href={"/sing-up"}>Comece grátis</Link>
+                  <Link href={"/sign-up"}>Comece grátis</Link>
                </Button>
             </div>
          </div>

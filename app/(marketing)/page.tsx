@@ -42,7 +42,7 @@ const MarketingPage = () => {
             única—realize tudo com o Taskify.
          </div>
          <Button className="mt-6" size="lg" asChild>
-            <Link href="/sing-up"> Comece seu trabalho gratis</Link>
+            <Link href="/sign-up"> Comece seu trabalho gratis</Link>
          </Button>
       </div>
    );
