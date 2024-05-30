@@ -16,7 +16,7 @@ export const useAction = <Tinput, TOutput>(
    action: Action<Tinput, TOutput>,
    options: UseActionOptions<TOutput> = {}
 ) => {
-   const [FieldErrors, setFieldErrors] = useState<
+   const [fieldErrors, setFieldErrors] = useState<
       FieldErrors<Tinput> | undefined
    >(undefined);
    const [error, setError] = useState<string | undefined>(undefined);
@@ -57,7 +57,7 @@ export const useAction = <Tinput, TOutput>(
 
    return {
       execute,
-      FieldErrors,
+      fieldErrors,
       error,
       data,
       isLoading,

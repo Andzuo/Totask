@@ -6,7 +6,7 @@ import { useFormStatus } from "react-dom";
 interface FormInputProps {
    errors?: {
       title?: string[];
-   };
+   },
 }
 
 export const FormInput = ({ errors }: FormInputProps) => {

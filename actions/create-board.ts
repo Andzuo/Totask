@@ -1,17 +1,17 @@
 "use server";
 
-import { z } from "zod";
-
 import { db } from "@/lib/db";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
+import { z } from "zod";
+
 export type State = {
    errors?: {
       title?: string[];
-   };
+   },
    message?: string | null;
-};
+}
 
 const CreateBoard = z.object({
    title: z.string().min(3, {
@@ -27,7 +27,7 @@ export async function create(prevState: State, formData: FormData) {
    if (!validatedFields.success) {
       return {
          errors: validatedFields.error.flatten().fieldErrors,
-         message: "Missing Fields.",
+         message: "Missing fields",
       };
    }
 
@@ -44,6 +44,7 @@ export async function create(prevState: State, formData: FormData) {
          message: "db error",
       };
    }
+
    revalidatePath("/organization/org_2h68uG2Tqr6RtzHL23mXLUEwxLS");
    redirect("/organization/org_2h68uG2Tqr6RtzHL23mXLUEwxLS");
 }

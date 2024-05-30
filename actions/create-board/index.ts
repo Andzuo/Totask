@@ -23,6 +23,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
    let board;
 
    try {
+      throw new Error("error");
       board = await db.board.create({
          data: {
             title,
@@ -36,9 +37,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
 
    revalidatePath(`/board/${board.id}`);
 
-   return {
-      data: board,
-   };
+   return { data: board };
 };
 
 export const createBoard = CreateSafeAction(CreateBoard, handler);
