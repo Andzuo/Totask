@@ -93,7 +93,7 @@ export const FormPicker = ({
                             <div className="absolute inset-y-0 h-full w-full bg-black/30 flex items-center justify-center">
                                 <Check className="h-4 w-4 text-white" />
                             </div>
-                        )};
+                        )}
                         <Link href={image.links.html}
                             target="_blank"
                             className="opacity-0 group-hover:opacity-100 absolute bottom-0 w-full text-[10px] truncate text-white hover:underline p-1 bg-black/50"
