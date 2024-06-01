@@ -1,3 +1,4 @@
+
 import { useState, useCallback } from "react";
 
 import { ActionState, FieldErrors } from "@/lib/create-safe-actions";
@@ -15,7 +16,7 @@ interface UseActionOptions<TOutput> {
 export const useAction = <Tinput, TOutput>(
    action: Action<Tinput, TOutput>,
    options: UseActionOptions<TOutput> = {}
-) => {
+) => {   
    const [fieldErrors, setFieldErrors] = useState<
       FieldErrors<Tinput> | undefined
    >(undefined);
