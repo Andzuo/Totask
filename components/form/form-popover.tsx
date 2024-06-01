@@ -15,6 +15,7 @@ import { FormInput } from "./form-input";
 import { FormSubmit } from "./form-submit";
 import { X } from "lucide-react";
 import { toast } from "sonner";
+import { FormPicker } from "./form-picker";
 
 interface FormPopoverProps {
     children: React.ReactNode;
@@ -41,8 +42,10 @@ export const FormPopover = ({
         });
         const onSubmit = (formData: FormData) => {
             const title = formData.get("title") as string;
-            console.log("Formulário enviado com título:", title);
-            execute({ title })
+            const image = formData.get("image") as string;
+
+            console.log ({ image })
+            // execute({ title })
         };
 
 
@@ -70,6 +73,10 @@ export const FormPopover = ({
                 </PopoverClose>
                 <form action={onSubmit} className="space-y-4">
                     <div className="space-y-4">
+                        <FormPicker
+                            id="image"
+                            errors={fieldErrors as Record<string, string[] | undefined>}
+                        />
                         <FormInput className="outline-none"
                             id="title"
                             label="Título"
