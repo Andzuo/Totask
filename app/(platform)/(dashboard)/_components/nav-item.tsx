@@ -40,12 +40,12 @@ export const NavItem = ({
 
    const routes = [
       {
-         label: "Boards",
+         label: "Áreas de trabalho",
          icon: <Layout className="h-4 w-4 mr-2" />,
          href: `/organization/${organization.id}`,
       },
       {
-         label: "Activity",
+         label: "Atividade",
          icon: <Activity className="h-4 w-4 mr-2" />,
          href: `/organization/${organization.id}/activity`,
       },
