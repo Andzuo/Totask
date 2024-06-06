@@ -6,7 +6,7 @@ import { revalidatePath } from "next/cache";
 import { CreateSafeAction } from "@/lib/create-safe-actions";
 
 import { InputType, ReturnType } from "./types";
-import { DeleteBoard } from "./schame";
+import { DeleteBoard } from "./schema";
 import { redirect } from "next/navigation";
 
 const handler = async (data: InputType): Promise<ReturnType> => {
